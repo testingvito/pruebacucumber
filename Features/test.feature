@@ -1,14 +1,14 @@
 Feature: Determinar el valor correcto para un factorial
 
   Scenario Outline: Verificar el cálculo del factorial
-    Given que tengo el número <valor>
-    When calculo el factorial
-    Then el resultado debe ser <resultado>
-
+    Given El numero  <valuein>
+    When ejecuto el metodo factorial
+    Then el resultado debe ser <valueout>
     Examples:
-      | valor | resultado |
-      | 2     | 2         |
-      | 3     | 6         |
-      | 5     | 120       |
-      | 0     | 1         |
-      | -1    | Error     |
+      | valor | valuein | valueout  |
+      | name1 | 5       | 120       |
+      | name2 | 6       | 720       |
+      | name2 | 4       | 70        |
+      | name2 | -2      | 0         |
+
+
